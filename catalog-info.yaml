@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "test-camel-balance-client"
+  description: "an application"
+  tags:
+    - java
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/backstage-admins"
+  system: system:default/payments
+  consumesApis: 
+    - balance
